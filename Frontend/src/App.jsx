@@ -22,7 +22,7 @@ function App() {
 
 async function reviewCode() {
   try {
-    const res = await axios.post('https://code-reviewer-4-tjcl.onrender.com', { code });  
+    const res = await axios.post('https://code-reviewer-4-tjcl.onrender.com/ai/get-review', { code });  
     setReview(res.data);
   } catch (err) {
     console.error('Error fetching review:', err);
